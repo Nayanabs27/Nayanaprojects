@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ambulance Services in Kochi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ambulance Services in Kochi</h1>
+    <ul>
+        {% for item in data %}
+        <li>
+            <h2><a href="{{ item.link }}">{{ item.title }}</a></h2>
+            <p>{{ item.snippet }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
