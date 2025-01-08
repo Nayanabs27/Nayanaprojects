@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Your Google Custom Search API key and CX (Custom Search Engine ID)
-API_KEY = "AIzaSyCYTgVqq-P6mM1HIGX3Q4N2MsMwLaKOwjo"
+API_KEY = "AIzaSyDx0ln_ucuerNfbi8hQWRnmy7L2w4qUWRU"
 CX = "a74a46057f65e4d90"
 
 
