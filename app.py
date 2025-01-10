@@ -29,7 +29,8 @@ def process_data(data):
 
 @app.route("/")
 def home():
-    query = "ambulance services in Kochi"
+    # query = "ambulance services in Kochi"
+    query = "ambulance services in allepey"
     raw_data = fetch_ambulance_data(query)
     if "error" in raw_data:
         return f"<h1>Error: {raw_data['error']}</h1>"
@@ -38,6 +39,7 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
